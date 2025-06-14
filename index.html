@@ -1,111 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Husker Track & Field Top 10</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Husker Girls Track & Field Top 10</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem;
+      color: #1D4721;
     }
 
     .logo {
-      text-align: center;
+      max-width: 150px;
       margin-bottom: 1rem;
     }
 
-    .logo img {
-      max-width: 150px;
-      height: auto;
-    }
-
     h1 {
+      font-size: 2rem;
       text-align: center;
-      color: #1D4721;
       margin-bottom: 2rem;
+      color: #1D4721;
     }
 
     .columns {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
-      flex-wrap: wrap;
+      width: 100%;
+      max-width: 900px;
     }
 
     .column {
-      flex: 1 1 200px;
-      max-width: 220px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      margin: 0.5rem 0;
-      text-align: center;
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
     }
 
     a {
       display: block;
+      text-align: center;
+      padding: 0.75rem;
+      background-color: #1D4721;
+      color: white;
       text-decoration: none;
-      color: #1D4721;
-      background-color: white;
-      padding: 0.5rem;
-      border: 1px solid #1D4721;
-      border-radius: 5px;
+      border-radius: 8px;
+      transition: transform 0.2s, background-color 0.3s;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      letter-spacing: 0.5px;
     }
 
     a:hover {
-      background-color: #1D4721;
-      color: white;
+      background-color: #145017;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .columns {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-   <img src="Huskers.jpg" alt="Huskers Logo" class="logo" style="mix-blend-mode: multiply;">
-  </div>
+  <img src="Huskers.png" alt="Huskers Logo" class="logo" />
 
   <h1>Husker Girls Track & Field Top 10</h1>
 
   <div class="columns">
     <div class="column">
-      <ul>
-        <li><a href="100.html">100m</a></li>
-        <li><a href="200.html">200m</a></li>
-        <li><a href="400.html">400m</a></li>
-        <li><a href="800.html">800m</a></li>
-        <li><a href="1600.html">1600m</a></li>
-        <li><a href="3200.html">3200m</a></li>
-        <li><a href="100H.html">100H</a></li>
-        <li><a href="300H.html">300H</a></li>
-      </ul>
+      <a href="100.html">100m</a>
+      <a href="200.html">200m</a>
+      <a href="400.html">400m</a>
+      <a href="800.html">800m</a>
+      <a href="1600.html">1600m</a>
+      <a href="3200.html">3200m</a>
+      <a href="100H.html">100H</a>
+      <a href="300H.html">300H</a>
     </div>
 
     <div class="column">
-      <ul>
-        <li><a href="4x1.html">4x100</a></li>
-        <li><a href="4x2.html">4x200</a></li>
-        <li><a href="4x4.html">4x400</a></li>
-        <li><a href="4x8.html">4x800</a></li>
-      </ul>
+      <a href="4x1.html">4x100</a>
+      <a href="4x2.html">4x200</a>
+      <a href="4x4.html">4x400</a>
+      <a href="4x8.html">4x800</a>
     </div>
 
     <div class="column">
-      <ul>
-        <li><a href="SP.html">Shot Put</a></li>
-        <li><a href="Disc.html">Discus</a></li>
-        <li><a href="HJ.html">High Jump</a></li>
-        <li><a href="LJ.html">Long Jump</a></li>
-        <li><a href="TJ.html">Triple Jump</a></li>
-        <li><a href="PV.html">Pole Vault</a></li>
-      </ul>
+      <a href="SP.html">Shot Put</a>
+      <a href="Disc.html">Discus</a>
+      <a href="HJ.html">High Jump</a>
+      <a href="LJ.html">Long Jump</a>
+      <a href="TJ.html">Triple Jump</a>
+      <a href="PV.html">Pole Vault</a>
     </div>
   </div>
 </body>
