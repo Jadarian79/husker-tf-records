@@ -22,19 +22,26 @@
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 500px;
+      max-width: 800px;
       width: 100%;
     }
 
     h1 {
       color: #1D4721;
       font-size: 1.8rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
 
     ul {
       list-style-type: none;
-      padding-left: 0;
+      padding: 0;
       margin: 0;
     }
 
@@ -57,18 +64,10 @@
       background-color: #145A1C;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      a {
-        width: 100%;
-        box-sizing: border-box;
+    @media (max-width: 700px) {
+      .columns {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -76,28 +75,40 @@
 <body>
   <div class="container">
     <h1>Husker Girls Track & Field Top 10</h1>
-    <ul>
-      <li><a href="100.html">100m</a></li>
-      <li><a href="100H.html">100H</a></li>
-      <li><a href="200.html">200m</a></li>
-      <li><a href="300H.html">300H</a></li>
-      <li><a href="400.html">400m</a></li>
-      <li><a href="800.html">800m</a></li>
-      <li><a href="1600.html">1600m</a></li>
-      <li><a href="3200.html">3200m</a></li>
-      <li><a href="4x1.html">4x100</a></li>
-      <li><a href="4x2.html">4x200</a></li>
-      <li><a href="4x4.html">4x400</a></li>
-      <li><a href="4x8.html">4x800</a></li>
-      <li><a href="SP.html">Shot Put</a></li>
-      <li><a href="Disc.html">Discus</a></li>
-      <li><a href="LJ.html">Long Jump</a></li>
-      <li><a href="TJ.html">Triple Jump</a></li>
-      <li><a href="HJ.html">High Jump</a></li>
-      <li><a href="PV.html">Pole Vault</a></li>
-    </ul>
+    <div class="columns">
+      <!-- Column 1: Individual Track Events -->
+      <ul>
+        <li><a href="100.html">100m</a></li>
+        <li><a href="200.html">200m</a></li>
+        <li><a href="400.html">400m</a></li>
+        <li><a href="800.html">800m</a></li>
+        <li><a href="1600.html">1600m</a></li>
+        <li><a href="3200.html">3200m</a></li>
+        <li><a href="100H.html">100H</a></li>
+        <li><a href="300H.html">300H</a></li>
+      </ul>
+
+      <!-- Column 2: Relays -->
+      <ul>
+        <li><a href="4x1.html">4x100</a></li>
+        <li><a href="4x2.html">4x200</a></li>
+        <li><a href="4x4.html">4x400</a></li>
+        <li><a href="4x8.html">4x800</a></li>
+      </ul>
+
+      <!-- Column 3: Field Events -->
+      <ul>
+        <li><a href="SP.html">Shot Put</a></li>
+        <li><a href="Disc.html">Discus</a></li>
+        <li><a href="HJ.html">High Jump</a></li>
+        <li><a href="LJ.html">Long Jump</a></li>
+        <li><a href="TJ.html">Triple Jump</a></li>
+        <li><a href="PV.html">Pole Vault</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
+
 
 
