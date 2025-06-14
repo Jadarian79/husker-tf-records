@@ -2,71 +2,65 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>100 Records</title>
+  <title>100m Records</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      margin: 0;
       padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
-      text-align: center;
       color: #1D4721;
-      margin-bottom: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
     table {
-      width: 100%;
       border-collapse: collapse;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 700px;
       background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
     }
 
     th, td {
+      border: 1px solid #ccc;
       padding: 12px;
       text-align: center;
-      border-bottom: 1px solid #ddd;
     }
 
     th {
-      background-color: #1D4721;
-      color: white;
-      text-transform: uppercase;
+      background-color: #e0e0e0;
+      font-weight: bold;
     }
 
     tbody tr:nth-child(even) {
       background-color: #f9f9f9;
     }
 
-    tbody tr:hover {
-      background-color: #e6f0e6;
-    }
-
-    .back-link {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .back-link a {
-      display: inline-block;
-      background-color: #1D4721;
-      color: white;
-      padding: 0.7rem 1.5rem;
+    a.button {
       text-decoration: none;
+      color: #fff;
+      background-color: #1D4721;
+      padding: 0.75rem 1.5rem;
       border-radius: 5px;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
 
-    .back-link a:hover {
-      background-color: #16361a;
+    a.button:hover {
+      background-color: #145017;
     }
   </style>
 </head>
 <body>
-  <h1>100m Top 10 Records</h1>
+  <h1>100m Records</h1>
 
   <table>
     <thead>
@@ -91,12 +85,6 @@
     </tbody>
   </table>
 
-  <div class="back-link">
-    <a href="index.html">← Back to Main Page</a>
-  </div>
-</body>
-</html>
-
-
+  <a href="index.html" class="button">← Back to Main Page</a>
 </body>
 </html>
