@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>800 Records</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f9f9f9; }
-    h1 { color: #c00000; }
-    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-    th { background: #eee; }
-    a { text-decoration: none; color: #c00000; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #1D4721;
+    }
+
+    h1 {
+      color: #1D4721;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 700px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      color: #1D4721;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    a.button {
+      text-decoration: none;
+      color: #fff;
+      background-color: #1D4721;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #145017;
+    }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;>800 Records</h1>
-  <table class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank</th>
-      <th>Athlete</th>
-      <th>Mark</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Christal Wynnemer</td>
-      <td>00:02:19.56</td>
-      <td>1996</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jenny Olson</td>
-      <td>00:02:20.30</td>
-      <td>1992</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Marie Sobania</td>
-      <td>00:02:21.30</td>
-      <td>1980</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Johanna Merten</td>
-      <td>00:02:23.09</td>
-      <td>2017</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Rachael Preusser</td>
-      <td>00:02:24.71</td>
-      <td>2015</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Amy Dombrovski</td>
-      <td>00:02:25.70</td>
-      <td>1999</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Brittany Stoermann</td>
-      <td>00:02:25.80</td>
-      <td>2007</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Carly Mitchell</td>
-      <td>00:02:27.16</td>
-      <td>2023</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Emily Wolter</td>
-      <td>00:02:28.90</td>
-      <td>2014</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Chris Symalla</td>
-      <td>00:02:29.84</td>
-      <td>1985</td>
-    </tr>
-  </tbody>
-</table>
-  <p><a href="index.html">← Back to main page</a></p>
+  <h1>800 Records</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Athlete</th>
+        <th>Mark</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Christal Wynnemer</td><td>2:19.56</td><td>1996</td></tr>
+      <tr><td>2</td><td>Jenny Olson</td><td>2:20.30</td><td>1992</td></tr>
+      <tr><td>3</td><td>Marie Sobania</td><td>2:21.30</td><td>1980</td></tr>
+      <tr><td>4</td><td>Johanna Merten</td><td>2:23.09</td><td>2017</td></tr>
+      <tr><td>5</td><td>Rachael Preusser</td><td>2:24.71</td><td>2015</td></tr>
+      <tr><td>6</td><td>Amy Dombrovski</td><td>2:25.70</td><td>1999</td></tr>
+      <tr><td>7</td><td>Brittany Stoermann</td><td>2:25.80</td><td>2007</td></tr>
+      <tr><td>8</td><td>Carly Mitchell</td><td>2:27.16</td><td>2023</td></tr>
+      <tr><td>9</td><td>Emily Wolter</td><td>2:28.90</td><td>2014</td></tr>
+      <tr><td>10</td><td>Chris Symalla</td><td>2:29.84</td><td>1985</td></tr>
+    </tbody>
+  </table>
+  <a href="index.html" class="button">← Back to main page</a>
 </body>
 </html>
