@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>4x2 Records</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f9f9f9; }
-    h1 { color: #c00000; }
-    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-    th { background: #eee; }
-    a { text-decoration: none; color: #c00000; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #1D4721;
+    }
+
+    h1 {
+      color: #1D4721;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      color: #1D4721;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+      color: #1D4721;
+    }
+
+    th {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    a.button {
+      text-decoration: none;
+      color: #fff;
+      background-color: #1D4721;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #145017;
+    }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;>4x2 Records</h1>
-  <table class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank</th>
-      <th>Athletes</th>
-      <th>Mark</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>C. Wentland, L. Meyer, T. Ebnet, S. Larsen</td>
-      <td>1:46.59</td>
-      <td>1997</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>M. Schulte, A. Vasilj, L. Solarz, R. Preusser</td>
-      <td>1:47.09</td>
-      <td>2015</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>A. Grebinoski, A. Vasilj, R. Preusser, M. Schulte</td>
-      <td>1:47.33</td>
-      <td>2013</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>T. Disher, L. Streit, C. Rausch, S. Larsen</td>
-      <td>1:47.50</td>
-      <td>2000</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>A. Diakite, M. Mitchell, C. Mitchell, R. Breth</td>
-      <td>1:47.60</td>
-      <td>2024</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>R. Preusser, M. Schulte, L. Solarz, A. Vasilj</td>
-      <td>1:48.03</td>
-      <td>2014</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>K. Huls, L. Ebnet, A. Huls, J. Stodolka</td>
-      <td>1:48.70</td>
-      <td>1978</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>R. Kukloc, C. Mitchell, M. Gross, A. Diakite</td>
-      <td>1:48.80</td>
-      <td>2025</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>C. Wentland, M. Ehrlichmann, T. Ebnet, C. Wynnemer</td>
-      <td>1:49.00</td>
-      <td>1995</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>A. Dombrovski, L. Meyer, T. Disher, S. Larsen</td>
-      <td>1:49.51</td>
-      <td>1998</td>
-    </tr>
-  </tbody>
-</table>
-  <p><a href="index.html">← Back to main page</a></p>
+  <h1>4x2 Records</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Athletes</th>
+        <th>Mark</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>C. Wentland, L. Meyer, T. Ebnet, S. Larsen</td><td>1:46.59</td><td>1997</td></tr>
+      <tr><td>2</td><td>M. Schulte, A. Vasilj, L. Solarz, R. Preusser</td><td>1:47.09</td><td>2015</td></tr>
+      <tr><td>3</td><td>A. Grebinoski, A. Vasilj, R. Preusser, M. Schulte</td><td>1:47.33</td><td>2013</td></tr>
+      <tr><td>4</td><td>T. Disher, L. Streit, C. Rausch, S. Larsen</td><td>1:47.50</td><td>2000</td></tr>
+      <tr><td>5</td><td>A. Diakite, M. Mitchell, C. Mitchell, R. Breth</td><td>1:47.60</td><td>2024</td></tr>
+      <tr><td>6</td><td>R. Preusser, M. Schulte, L. Solarz, A. Vasilj</td><td>1:48.03</td><td>2014</td></tr>
+      <tr><td>7</td><td>K. Huls, L. Ebnet, A. Huls, J. Stodolka</td><td>1:48.70</td><td>1978</td></tr>
+      <tr><td>8</td><td>R. Kukloc, C. Mitchell, M. Gross, A. Diakite</td><td>1:48.80</td><td>2025</td></tr>
+      <tr><td>9</td><td>C. Wentland, M. Ehrlichmann, T. Ebnet, C. Wynnemer</td><td>1:49.00</td><td>1995</td></tr>
+      <tr><td>10</td><td>A. Dombrovski, L. Meyer, T. Disher, S. Larsen</td><td>1:49.51</td><td>1998</td></tr>
+    </tbody>
+  </table>
+  <a href="index.html" class="button">← Back to Main Page</a>
 </body>
 </html>
