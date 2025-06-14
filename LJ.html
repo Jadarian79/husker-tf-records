@@ -1,91 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>LJ Records</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f9f9f9; }
-    h1 { color: #c00000; }
-    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-    th { background: #eee; }
-    a { text-decoration: none; color: #c00000; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #1D4721;
+    }
+    h1 {
+      color: #1D4721;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 700px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      color: #1D4721;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    a.button {
+      text-decoration: none;
+      color: #fff;
+      background-color: #1D4721;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #145017;
+    }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;>LJ Records</h1>
-  <table class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank</th>
-      <th>Athlete</th>
-      <th>Mark</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Taunja Disher</td>
-      <td>17'10.25"</td>
-      <td>2000</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Nicole Berscheid</td>
-      <td>17'7"</td>
-      <td>2008</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Holly Frie</td>
-      <td>17'5"</td>
-      <td>1990</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Shelly Cipala</td>
-      <td>17'5"</td>
-      <td>NA</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>McKinzie Schulte</td>
-      <td>17'0"</td>
-      <td>2015</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Rilee Breth</td>
-      <td>16'10"</td>
-      <td>2024</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Carly Mitchell</td>
-      <td>16'9.75"</td>
-      <td>2024</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Tricia Ebnet</td>
-      <td>16'8.5"</td>
-      <td>1997</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Sara Stanoch</td>
-      <td>16'6.5"</td>
-      <td>1995</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Amber Ehrlichmann</td>
-      <td>16'5.5"</td>
-      <td>1997</td>
-    </tr>
-  </tbody>
-</table>
-  <p><a href="index.html">← Back to main page</a></p>
+  <h1>LJ Records</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Athlete</th>
+        <th>Mark</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Taunja Disher</td><td>17'10.25"</td><td>2000</td></tr>
+      <tr><td>2</td><td>Nicole Berscheid</td><td>17'7"</td><td>2008</td></tr>
+      <tr><td>3</td><td>Holly Frie</td><td>17'5"</td><td>1990</td></tr>
+      <tr><td>4</td><td>Shelly Cipala</td><td>17'5"</td><td>NA</td></tr>
+      <tr><td>5</td><td>McKinzie Schulte</td><td>17'0"</td><td>2015</td></tr>
+      <tr><td>6</td><td>Rilee Breth</td><td>16'10"</td><td>2024</td></tr>
+      <tr><td>7</td><td>Carly Mitchell</td><td>16'9.75"</td><td>2024</td></tr>
+      <tr><td>8</td><td>Tricia Ebnet</td><td>16'8.5"</td><td>1997</td></tr>
+      <tr><td>9</td><td>Sara Stanoch</td><td>16'6.5"</td><td>1995</td></tr>
+      <tr><td>10</td><td>Amber Ehrlichmann</td><td>16'5.5"</td><td>1997</td></tr>
+    </tbody>
+  </table>
+  <a href="index.html" class="button">← Back to main page</a>
 </body>
 </html>
