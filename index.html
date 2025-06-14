@@ -39,24 +39,22 @@
       flex-wrap: wrap;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      margin: 0.5rem 0;
+    .column {
+      display: grid;
+      grid-template-rows: repeat(auto-fill, minmax(2.5rem, auto));
+      gap: 0.5rem;
     }
 
     a {
       display: inline-block;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 1.5rem;
       border-radius: 6px;
       background-color: #1D4721;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
+      min-width: 140px;
+      text-align: center;
       transition: background-color 0.3s ease;
     }
 
@@ -76,39 +74,41 @@
   <div class="container">
     <h1>Husker Girls Track & Field Top 10</h1>
     <div class="columns">
+      
       <!-- Column 1: Individual Track Events -->
-      <ul>
-        <li><a href="100.html">100m</a></li>
-        <li><a href="200.html">200m</a></li>
-        <li><a href="400.html">400m</a></li>
-        <li><a href="800.html">800m</a></li>
-        <li><a href="1600.html">1600m</a></li>
-        <li><a href="3200.html">3200m</a></li>
-        <li><a href="100H.html">100H</a></li>
-        <li><a href="300H.html">300H</a></li>
-      </ul>
+      <div class="column">
+        <a href="100.html">100m</a>
+        <a href="200.html">200m</a>
+        <a href="400.html">400m</a>
+        <a href="800.html">800m</a>
+        <a href="1600.html">1600m</a>
+        <a href="3200.html">3200m</a>
+        <a href="100H.html">100H</a>
+        <a href="300H.html">300H</a>
+      </div>
 
       <!-- Column 2: Relays -->
-      <ul>
-        <li><a href="4x1.html">4x100</a></li>
-        <li><a href="4x2.html">4x200</a></li>
-        <li><a href="4x4.html">4x400</a></li>
-        <li><a href="4x8.html">4x800</a></li>
-      </ul>
+      <div class="column">
+        <a href="4x1.html">4x100</a>
+        <a href="4x2.html">4x200</a>
+        <a href="4x4.html">4x400</a>
+        <a href="4x8.html">4x800</a>
+      </div>
 
       <!-- Column 3: Field Events -->
-      <ul>
-        <li><a href="SP.html">Shot Put</a></li>
-        <li><a href="Disc.html">Discus</a></li>
-        <li><a href="HJ.html">High Jump</a></li>
-        <li><a href="LJ.html">Long Jump</a></li>
-        <li><a href="TJ.html">Triple Jump</a></li>
-        <li><a href="PV.html">Pole Vault</a></li>
-      </ul>
+      <div class="column">
+        <a href="SP.html">Shot Put</a>
+        <a href="Disc.html">Discus</a>
+        <a href="HJ.html">High Jump</a>
+        <a href="LJ.html">Long Jump</a>
+        <a href="TJ.html">Triple Jump</a>
+        <a href="PV.html">Pole Vault</a>
+      </div>
     </div>
   </div>
 </body>
 </html>
+
 
 
 
