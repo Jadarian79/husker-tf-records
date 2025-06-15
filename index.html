@@ -5,33 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Husker Girls Track & Field Top 10</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('HTF1.png') no-repeat center center fixed;
+      padding: 2rem;
+      font-family: 'Titillium Web', sans-serif;
+      background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+        url('track_background.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
-      color: #ffffff;
-      position: relative;
-    }
-
-    /* Dark overlay for readability */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: -1;
+      min-height: 100vh;
     }
 
     .logo {
-      max-width: 120px;
+      max-width: 160px;
       margin-bottom: 1rem;
       filter: drop-shadow(2px 2px 4px #000);
     }
@@ -40,8 +32,8 @@
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
-      color: #f2f2f2;
-      text-shadow: 1px 1px 4px black;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
     }
 
     .columns {
@@ -64,21 +56,22 @@
     a {
       display: block;
       text-align: center;
-      padding: 0.75rem;
-      background-color: rgba(29, 71, 33, 0.9);
+      padding: 0.8rem;
+      background: rgba(29, 71, 33, 0.85);
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
       transition: all 0.3s ease;
       font-weight: bold;
       letter-spacing: 0.5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     a:hover {
-      background-color: rgba(20, 80, 23, 1);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      background-color: rgba(20, 80, 23, 0.95);
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #1D4721;
     }
 
     @media (max-width: 600px) {
@@ -86,15 +79,11 @@
         flex-direction: column;
         align-items: center;
       }
-
-      h1 {
-        font-size: 1.75rem;
-      }
     }
   </style>
 </head>
 <body>
-  <img src="Huskers.jpg" alt="Huskers Logo" class="logo" style="mix-blend-mode: screen;">
+  <img src="HTF1.jpg" alt="Huskers Logo" class="logo" />
 
   <h1>Husker Girls Track & Field Top 10</h1>
 
