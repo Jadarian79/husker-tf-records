@@ -8,24 +8,40 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
+      background: url('HTF1.png') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 2rem;
-      color: #1D4721;
+      color: #ffffff;
+      position: relative;
+    }
+
+    /* Dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
     }
 
     .logo {
-      max-width: 150px;
+      max-width: 120px;
       margin-bottom: 1rem;
+      filter: drop-shadow(2px 2px 4px #000);
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
-      color: #1D4721;
+      color: #f2f2f2;
+      text-shadow: 1px 1px 4px black;
     }
 
     .columns {
@@ -34,7 +50,7 @@
       justify-content: center;
       gap: 2rem;
       width: 100%;
-      max-width: 900px;
+      max-width: 1000px;
     }
 
     .column {
@@ -49,18 +65,20 @@
       display: block;
       text-align: center;
       padding: 0.75rem;
-      background-color: #1D4721;
+      background-color: rgba(29, 71, 33, 0.9);
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      transition: transform 0.2s, background-color 0.3s;
+      border-radius: 10px;
+      transition: all 0.3s ease;
       font-weight: bold;
       letter-spacing: 0.5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     a:hover {
-      background-color: #145017;
-      transform: translateY(-2px);
+      background-color: rgba(20, 80, 23, 1);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
 
     @media (max-width: 600px) {
@@ -68,11 +86,15 @@
         flex-direction: column;
         align-items: center;
       }
+
+      h1 {
+        font-size: 1.75rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="Huskers.jpg" alt="Huskers Logo" class="logo" style="mix-blend-mode: multiply;">
+  <img src="Huskers.jpg" alt="Huskers Logo" class="logo" style="mix-blend-mode: screen;">
 
   <h1>Husker Girls Track & Field Top 10</h1>
 
