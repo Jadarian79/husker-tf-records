@@ -41,11 +41,25 @@
     th {
       background-color: #1D4721;
       font-weight: bold;
-      color: white; /* 🔧 Fix: make header text white */
+      color: white;
     }
 
     tbody tr:nth-child(even) {
       background-color: #f9f9f9;
+    }
+
+    .active {
+      background-color: #d6f5d6 !important;
+      font-weight: bold;
+    }
+
+    .tag {
+      background-color: #28a745;
+      color: white;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      margin-left: 6px;
     }
 
     a.button {
@@ -82,7 +96,7 @@
       <tr><td>5</td><td>Angelica Diakite, Madison Mitchell, Carly Mitchell, Rilee Breth</td><td>1:47.60</td><td>2024</td></tr>
       <tr><td>6</td><td>Rachael Preusser, M. Schulte, L. Solarz, Arianna Vasilj</td><td>1:48.03</td><td>2014</td></tr>
       <tr><td>7</td><td>K. Huls, L. Ebnet, A. Huls, J. Stodolka</td><td>1:48.70</td><td>1978</td></tr>
-      <tr><td>8</td><td>Rachel Kukloc, Carly Mitchell, Maggie Gross, Angelica Diakite</td><td>1:48.80</td><td>2025</td></tr>
+      <tr class="active"><td>8</td><td>Rachel Kukloc, Carly Mitchell, Maggie Gross, Angelica Diakite <span class="tag">Active</span></td><td>1:48.80</td><td>2025</td></tr>
       <tr><td>9</td><td>Christy Wentland, M. Ehrlichmann, T. Ebnet, C. Wynnemer</td><td>1:49.00</td><td>1995</td></tr>
       <tr><td>10</td><td>Amy Dombrovski, L. Meyer, Taunja Disher, Shanda Larsen</td><td>1:49.51</td><td>1998</td></tr>
     </tbody>
