@@ -7,107 +7,42 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #1D4721;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      text-align: center;
       background: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('HTF1.png') no-repeat center center fixed;
       background-size: cover;
-    }
-
-    .logo {
-      max-width: 150px;
-      margin-bottom: 1rem;
-      mix-blend-mode: multiply;
+      min-height: 100vh;
+      padding: 2rem;
     }
 
     h1 {
-      font-size: 2rem;
-      text-align: center;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
-      color: #ffffff;
     }
 
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      width: 100%;
-      max-width: 900px;
-    }
-
-    .column {
-      flex: 1;
-      min-width: 200px;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    a {
-      display: block;
-      text-align: center;
-      padding: 0.75rem;
-      background-color: rgba(255, 255, 255, 0.85);
+    .button {
+      background: rgba(255, 255, 255, 0.9);
       color: #1D4721;
-      text-decoration: none;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      display: inline-block;
       border-radius: 8px;
-      transition: transform 0.2s, background-color 0.3s;
+      text-decoration: none;
       font-weight: bold;
-      letter-spacing: 0.5px;
     }
 
-    a:hover {
-      background-color: #ffffff;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 600px) {
-      .columns {
-        flex-direction: column;
-        align-items: center;
-      }
+    .button:hover {
+      background: white;
     }
   </style>
 </head>
 <body>
-  <img src="Huskers.jpg" alt="Huskers Logo" class="logo">
-
   <h1>Husker Girls Track & Field Top 10</h1>
-
-  <div class="columns">
-    <div class="column">
-      <a href="100.html">100m</a>
-      <a href="200.html">200m</a>
-      <a href="4.html">400m</a>
-      <a href="800.html">800m</a>
-      <a href="1600.html">1600m</a>
-      <a href="3200.html">3200m</a>
-      <a href="100H.html">100H</a>
-      <a href="300H.html">300H</a>
-    </div>
-
-    <div class="column">
-      <a href="4x1.html">4x100</a>
-      <a href="4x2.html">4x200</a>
-      <a href="4x4.html">4x400</a>
-      <a href="4x8.html">4x800</a>
-    </div>
-
-    <div class="column">
-      <a href="SP.html">Shot Put</a>
-      <a href="Disc.html">Discus</a>
-      <a href="HJ.html">High Jump</a>
-      <a href="LJ.html">Long Jump</a>
-      <a href="TJ.html">Triple Jump</a>
-      <a href="PV.html">Pole Vault</a>
-    </div>
-  </div>
+  <a href="100.html" class="button">100m</a>
+  <a href="200.html" class="button">200m</a>
+  <a href="400.html" class="button">400m</a>
 </body>
 </html>
