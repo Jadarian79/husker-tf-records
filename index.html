@@ -7,17 +7,30 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
+    html {
+      font-size: 100%;
+    }
+
+    @media (max-width: 400px) {
+      html {
+        font-size: 90%;
+      }
+    }
+
     body {
-  margin: 0;
-  padding: 2rem;
-  font-family: 'Titillium Web', sans-serif;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Titillium Web', sans-serif;
+      background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+        url('track_background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
 
     .logo {
       max-width: 160px;
@@ -40,6 +53,7 @@
       gap: 2rem;
       width: 100%;
       max-width: 1000px;
+      margin-top: 1rem;
     }
 
     .column {
@@ -53,7 +67,7 @@
     a {
       display: block;
       text-align: center;
-      padding: 0.8rem;
+      padding: 1rem;
       background: rgba(29, 71, 33, 0.85);
       color: white;
       text-decoration: none;
@@ -63,6 +77,8 @@
       letter-spacing: 0.5px;
       backdrop-filter: blur(5px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      white-space: normal;
+      word-break: break-word;
     }
 
     a:hover {
@@ -72,16 +88,32 @@
     }
 
     @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
       .columns {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        gap: 1rem;
+      }
+
+      .column {
+        width: 100%;
+      }
+
+      a {
+        font-size: 1rem;
+        padding: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
- 
-
 
   <h1>Husker Girls Track & Field Top 10</h1>
 
@@ -113,5 +145,6 @@
       <a href="PV.html">Pole Vault</a>
     </div>
   </div>
+
 </body>
 </html>
