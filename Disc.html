@@ -36,10 +36,22 @@
     th {
       background-color: #1D4721;
       font-weight: bold;
-      color: white; /* 🔧 Fix: make header text white */
+      color: white;
     }
     tbody tr:nth-child(even) {
       background-color: #f9f9f9;
+    }
+    .active {
+      background-color: #d6f5d6 !important;
+      font-weight: bold;
+    }
+    .tag {
+      background-color: #28a745;
+      color: white;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      margin-left: 6px;
     }
     a.button {
       text-decoration: none;
@@ -71,7 +83,7 @@
       <tr><td>2</td><td>Janel Ebnet</td><td>118'3"</td><td>1992</td></tr>
       <tr><td>3</td><td>Sharon Wentland</td><td>116'4"</td><td>1987</td></tr>
       <tr><td>4</td><td>Sally Huls</td><td>113'10"</td><td>1986</td></tr>
-      <tr><td>5</td><td>Emma Kobernusz</td><td>113'9"</td><td>2025</td></tr>
+      <tr class="active"><td>5</td><td>Emma Kobernusz <span class="tag">Active</span></td><td>113'9"</td><td>2025</td></tr>
       <tr><td>6</td><td>Becky Determan</td><td>111'10"</td><td>2003</td></tr>
       <tr><td>7</td><td>Missy Harlander</td><td>110'2"</td><td>1997</td></tr>
       <tr><td>8</td><td>Gabby Langerud</td><td>108'3"</td><td>2015</td></tr>
