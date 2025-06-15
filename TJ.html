@@ -36,10 +36,16 @@
     th {
       background-color: #1D4721;
       font-weight: bold;
-      color: white; /* 🔧 Fix: make header text white */
+      color: white;
     }
     tbody tr:nth-child(even) {
       background-color: #f9f9f9;
+    }
+    /* Highlight active athletes */
+    tbody tr.active {
+      background-color: #a8d5a3; /* soft green */
+      font-weight: bold;
+      color: #0b3608;
     }
     a.button {
       text-decoration: none;
@@ -69,8 +75,8 @@
     <tbody>
       <tr><td>1</td><td>Nicole Berscheid</td><td>37'1.5"</td><td>2010</td></tr>
       <tr><td>2</td><td>Shanda Larsen</td><td>35'4.25"</td><td>2002</td></tr>
-      <tr><td>3</td><td>Carly Mitchell</td><td>34'0.25"</td><td>2025</td></tr>
-      <tr><td>4</td><td>Maggie Gross</td><td>33'11"</td><td>2023</td></tr>
+      <tr class="active"><td>3</td><td>Carly Mitchell</td><td>34'0.25"</td><td>2025</td></tr>
+      <tr class="active"><td>4</td><td>Maggie Gross</td><td>33'11"</td><td>2023</td></tr>
       <tr><td>5</td><td>Lydia Hoikka</td><td>33'10"</td><td>2021</td></tr>
       <tr><td>6</td><td>Corrie Ethen</td><td>33'6.25"</td><td>2017</td></tr>
       <tr><td>7</td><td>Sara Skudlarek</td><td>33'5"</td><td>1998</td></tr>
