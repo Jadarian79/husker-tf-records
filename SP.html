@@ -36,10 +36,16 @@
     th {
       background-color: #1D4721;
       font-weight: bold;
-      color: white; /* 🔧 Fix: make header text white */
+      color: white;
     }
     tbody tr:nth-child(even) {
       background-color: #f9f9f9;
+    }
+    /* Highlight Emma Kobernusz as active */
+    tbody tr.active {
+      background-color: #a8d5a3;  /* soft green */
+      font-weight: bold;
+      color: #0b3608;
     }
     a.button {
       text-decoration: none;
@@ -75,7 +81,7 @@
       <tr><td>6</td><td>Gabby Langerud</td><td>35'03"</td><td>2015</td></tr>
       <tr><td>7</td><td>Missy Harlander</td><td>34'1"</td><td>1997</td></tr>
       <tr><td>8</td><td>McKenna Hohbein</td><td>33'10"</td><td>2024</td></tr>
-      <tr><td>9</td><td>Emma Kobernusz</td><td>33'8"</td><td>2025</td></tr>
+      <tr class="active"><td>9</td><td>Emma Kobernusz</td><td>33'8"</td><td>2025</td></tr>
       <tr><td>10</td><td>Morgan Pellet</td><td>33'01"</td><td>2025</td></tr>
       <tr><td>11</td><td>Paige Paulzine</td><td>31'1"</td><td>2019</td></tr>
     </tbody>
